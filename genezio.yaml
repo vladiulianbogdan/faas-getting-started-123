@@ -1,0 +1,17 @@
+backend:
+    functions:
+        - entry: index.mjs
+          handler: handler
+          name: hello-world-function
+          path: ./
+          type: aws
+    language:
+        name: js
+        packageManager: npm
+    path: ./
+    scripts:
+        deploy:
+            - npm install
+name: functions-app-123
+region: us-east-1
+yamlVersion: 2
